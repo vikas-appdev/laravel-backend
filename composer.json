@@ -6,12 +6,20 @@
     "type": "project",
     "require": {
         "php": ">=5.6.4",
-        "laravel/framework": "5.3.*"
+        "barryvdh/laravel-cors": "^0.10.0",
+        "cviebrock/eloquent-sluggable": "^4.2",
+        "doctrine/dbal": "^2.7",
+        "jeroennoten/laravel-adminlte": "^1.19",
+        "laravel/framework": "5.4.*",
+        "laravel/tinker": "~1.0",
+        "laravelcollective/html": "^5.2.0",
+        "maatwebsite/excel": "~2.1.0",
+        "tymon/jwt-auth": "0.5.*"
     },
     "require-dev": {
         "fzaninotto/faker": "~1.4",
         "mockery/mockery": "0.9.*",
-        "phpunit/phpunit": "~5.0",
+        "phpunit/phpunit": "~5.7",
         "symfony/css-selector": "3.1.*",
         "symfony/dom-crawler": "3.1.*"
     },
