@@ -1,7 +1,7 @@
 
 @extends('adminlte::page')
 
-@section('title', 'AdminLTE')
+@section('title', 'ITC ADMIN')
 
 @section('content_header')
     <h1>Journey Report</h1>
@@ -49,8 +49,8 @@
                	  <th>Total Distance (km.)</th>                  
                    <th>Fare per Km</th> 
                    <th>Base Fare</th>
-                   <th>Fuel Use</th>
-                   <th>Fuel Charge</th>
+                   <!-- <th>Fuel Use</th>
+                   <th>Fuel Charge</th> -->
                   <th>Total Fare</th>
 
                    <th>Payment Date</th> 
@@ -82,8 +82,8 @@
                       
                       <td>₹ {{$order->charges_per_distance}}</td>
                       <td>₹ {{$order->base_price}}</td>
-                      <td> {{$order->journey->total_fuel}} ltr</td>
-                      <td>₹ {{$order->journey->fuel_charge}}</td>
+                      <!-- <td> {{$order->journey->total_fuel}} ltr</td>
+                      <td>₹ {{$order->journey->fuel_charge}}</td> -->
                      	<td>₹ {{$order->journey->total_charge}}</td>
                      	<th>{{$order->journey->updated_at}}</th>
                       </tr>
