@@ -98,7 +98,7 @@
                      
                     </div>
                 </div>
-                <div class="col-md-12">
+                <!-- <div class="col-md-12">
                     <div class="col-md-6">
                         <label>
                            Fuel use
@@ -117,7 +117,7 @@
                     <div class="col-md-6">
                         ₹ {{$payment->fuel_charge}} 
                     </div>
-                </div>
+                </div> -->
         
                 <div class="col-md-12">
                     <div class="col-md-6">

@@ -81,12 +81,12 @@
                             </div>
                         </div>
 
-                         <div class="col-xs-12 col-sm-12 col-md-12">
+                        <!--  <div class="col-xs-12 col-sm-12 col-md-12">
                             <div class="form-group">
                                 <strong>Fuel Price/ ltr:</strong>
                                 {!! Form::text('fuelcharges_per_ltr', $cab->fuelcharges_per_ltr, array('placeholder' => 'Fuel Price/ ltr','class' => 'form-control', 'id' => 'fuelcharges_per_ltr')) !!}
                             </div>
-                        </div>
+                        </div> -->
                        
                       </div>
                       <div class="col-xs-12 col-sm-12 col-md-12 text-center" id="form_sub">
@@ -141,7 +141,7 @@
                  <th>Avg.</th>
                   <th>Milage</th>
                    <th>Charge/km</th>
-                   <th>Fuel/l</th>
+                   <!--<th>Fuel/l</th>-->
 
                   <th>Action</th>
                 </tr>
@@ -157,7 +157,7 @@
                           <td>{{ $cab->avg_speed }}</td>
                           <td>{{ $cab->milage }}</td>
                           <td>{{ $cab->charges_per_distance }}</td>
-                           <td>{{ $cab->fuelcharges_per_ltr }}</td>
+                           <!-- <td>{{ $cab->fuelcharges_per_ltr }}</td> -->
 
 
                          
