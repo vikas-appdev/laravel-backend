@@ -70,7 +70,8 @@ class CalculateController extends Controller
                 $fuel_charge = $fuel_use * ($cabData->fuelcharges_per_ltr);
                 $fuel_charge = number_format((float)$fuel_charge, 2, '.', '');
                 $previous_balance = $data->previous_balance;
-                $total_charge = $charge_per_dist + $fuel_charge + $previous_balance;
+                /** Fule Charger  add in tocal charge below + $fuel_charge **/
+                $total_charge = $charge_per_dist + $previous_balance;
                 $total_charge = number_format((float)$total_charge, 2, '.', '');
                 
                  $data->update(['stop_date' => $current,'end_dist'=>$request->close_dist, 'total_dist' => $totalDist, 'total_time' => $time_travel, 'charge' => $charge_per_dist, 'total_fuel' => $fuel_use, 'fuel_charge' => $fuel_charge, 'total_charge' => $total_charge]);
