@@ -159,6 +159,17 @@ return [
      
     ],
 
+    'vmenu' => [
+       
+        'ACCOUNTT',
+        [
+            'text' => 'Jouney Report',
+            'icon' => 'cab',
+            'url' => 'admin/journey'
+        ]
+     
+    ],
+
     /*
     |--------------------------------------------------------------------------
     | Menu Filters

@@ -64,7 +64,7 @@
                      @foreach ($orders as $i => $order)
                       <tr>
                       	<td>{{ ++$i }}</td>
-                    	<td>{{$order->journey->order_id}}</td>
+                    	<td>{{ Carbon\Carbon::parse($order->journey->start_date)->format('Ymd') }}{{$order->journey->order_id}}</td>
                      	<td>{{$order->employee_name}}</td>
                         <td>{{$order->email}}</td>
 
